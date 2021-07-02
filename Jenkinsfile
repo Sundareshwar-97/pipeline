@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment{
+        NAME="sundar"
+    }
 
     stages{
         stage('python stage'){
