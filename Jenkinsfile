@@ -17,6 +17,9 @@ pipeline {
 
             }
         }
-        
+       post{
+        success{
+                    build job: 'testpipeline1', parameters:[string(name:'STR_VAL',value:'the name')]
+    } 
     }
 }
